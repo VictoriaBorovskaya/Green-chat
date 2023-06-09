@@ -1,0 +1,44 @@
+.chat {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1024px;
+  background-color: white;
+  margin: 15px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat-list {
+  background-color: white;
+  width: 30%;
+  height: 100%;
+}
+
+.chat-header {
+  background-color: #f0f2f5;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.chat-button {
+  outline: none;
+  border: none;
+  background-color: white;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.span {
+  color: #00a884;
+}
+
+.chat-item {
+  background-image: url('https://damion.club/uploads/posts/2022-01/1642423515_7-damion-club-p-standartnii-fon-whatsapp-7.png');
+  opacity: 0.4;
+  background-size: cover;
+  width: 70%;
+  height: 100%;
+}

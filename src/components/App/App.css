@@ -1,0 +1,18 @@
+.App {
+  height: 100vh;
+  background-color: #eae6df;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  background-color: #00a884;
+  height: 50px;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}

@@ -25,20 +25,22 @@ const ChatsPage = ({ user, setUser }) => {
 
   const sendMessage = async (event) => {
     event.preventDefault();
-    try {
-      let url = `https://api.green-api.com/waInstance${user.idInstance}/sendMessage/${user.apiTokenInstance}`;
-      await fetch(url, {
-        method: 'POST',
-        body: JSON.stringify({
-          chatId: `${chatId}@c.us`,
-          message: message,
-        }),
-      });
-      setChat([...chat, { type: 'send', text: message }]);
-      setMessage('');
-      scrollChat();
-    } catch (error) {
-      console.log(error);
+    if (message) {
+      try {
+        let url = `https://api.green-api.com/waInstance${user.idInstance}/sendMessage/${user.apiTokenInstance}`;
+        await fetch(url, {
+          method: 'POST',
+          body: JSON.stringify({
+            chatId: `${chatId}@c.us`,
+            message: message,
+          }),
+        });
+        setChat([...chat, { type: 'send', text: message }]);
+        setMessage('');
+        scrollChat();
+      } catch (error) {
+        console.log(error);
+      }
     }
   };
 

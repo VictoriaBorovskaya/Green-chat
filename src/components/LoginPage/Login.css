@@ -1,0 +1,7 @@
+.login_input {
+  @apply w-full outline-none px-2 py-1 focus:border focus:border-[#00a884] rounded;
+}
+
+.login_button {
+  @apply bg-[#00a884] w-1/2 px-2 py-1 text-white font-medium text-center rounded;
+}
